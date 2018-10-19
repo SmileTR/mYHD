@@ -4,7 +4,7 @@ var banner_list = document.querySelector(".banner_list");
 var banner_listHeight = banner_list.offsetHeight;
 
 window.onscroll = function(){
-	var scrollTop = document.documentElement.scrollTop;	
+	var scrollTop = document.documentElement.scrollTop || window.pageYOffset;	
 	opc = scrollTop/banner_listHeight;
 	if(opc < 1){
 		
